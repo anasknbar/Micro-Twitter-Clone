@@ -48,7 +48,7 @@ header{
 
 /* textareas + btn */
 
-textarea{
+.tweetTextarea{
   border: none;
   padding: 10px;
   margin: 0 0 20px 0;
@@ -60,7 +60,7 @@ textarea{
   resize: none;
 }
 
-button{
+.tweet-btn{
   background-color: #1DA1F2;
   border: none;
   color: white;
@@ -127,6 +127,74 @@ button{
   width: 48px;
 }
 
+
+ /*_________________________________________*/
+.fa-ellipsis{
+  position: absolute;
+  
+  top: 0;
+  right: 0;
+}
+
+.options{
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  background-color: #92ccf3;
+  border-radius: 4px;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 10px;
+
+}
+
+.options button{
+  padding: 5px 15px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 11.5px;
+}
+
+.options button:hover{
+  background-color: #555;
+  border-radius: 5px;
+}
+.reply-div{
+  display: flex;
+  
+  column-gap: 15px;
+}
+.replyInput{
+  height: 25px;
+  resize: none;
+  
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #0F8CDF;
+  padding-top: 5px;
+  
+}
+.replyBtn{
+  cursor: pointer;
+  padding: 0 10px;
+  border: none;
+  background-color: #0F8CDF;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px; 
+}
+.replyBtn:active{
+  opacity: 0.7;
+}
 /* utility */
 .hidden{
   display: none;
